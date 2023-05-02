@@ -1,15 +1,24 @@
 import "./App.css";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from '@react-three/drei'
-import Navbars from "./components/Nav/Navbar";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Home from "./components/Home/Home";
+import Shop from "./components/Shop/Shop";
+
 
 
 function App() {
   return (
     <>
-     <Navbars/>
+
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />}> </Route>
+          <Route path='/shop' element={<Shop />}> </Route>     
+        </Routes>
+      </BrowserRouter>
+
     </>
   );
 }
- 
+
 export default App;

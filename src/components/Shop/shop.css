@@ -1,0 +1,64 @@
+.shopbanner{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.shopcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.vertical-line-shop {
+    border-left: 2px solid #F3AEC3;
+    height: 180vh;
+    margin-left: 50px;
+}
+
+.vertical-line1-shop {
+    border-right: 2px solid #F3AEC3;
+    height: 180vh;
+    margin-right: 53px;
+}
+.main-contenier{
+    display: flex;
+   justify-content: space-around;
+   gap: 2rem;
+}
+.card-conteiner{
+    margin-top: 3rem;
+    border: 1px solid #333;
+    height: 470px;
+    width: 300px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-conteiner img {
+    width: 260px;
+    height: 260px;
+    border-radius: 40px ;
+    margin-top: 20px;
+}
+.card-conteiner button {
+    width: 150px;
+    height: 75px;
+    border: none;
+    background-color: #F3AEC3;
+    color: black;
+    border-radius: 24px;
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+.card-conteiner button:hover {
+
+    background-color: #f14d7e;
+    color: rgb(255, 255, 255);
+}
+
+.model-erea{
+    display: flex;
+    justify-content: center;
+}
+

@@ -1,20 +1,42 @@
 import React from 'react';
 import './Navbar.css';
-import mylogo  from '../../img/donut.png'
+import mylogo from '../../img/donut.png'
+import { BsFillCartFill } from "react-icons/bs";
+import { Link } from 'react-router-dom';
+
+
 
 function Navbars() {
   return (
 
-  <nav>
-      <div className="logo-container">
+    <nav>
+
+      <div>
         <img src={mylogo} alt="Logo" className="logo" />
       </div>
-        
-      <ul>
-        <li><a href="home">Home</a></li>
-        <li><a href="shop">Shop</a></li>
+      <div>
+        <ul>
+          <li><Link to={'/'}>Home</Link></li>
 
-      </ul>
+          <li><Link to={'/shop'}>Shop</Link></li>
+
+        </ul>
+      </div>
+      <div>
+
+        <div className="cart-col">
+          <div className="cart-links">
+         
+              <button className="links" href="cart.jsx">
+              <BsFillCartFill />
+              
+              </button>
+            
+
+          </div>
+        </div>
+
+      </div>
     </nav>
   );
 }
