@@ -1,10 +1,26 @@
-import React from 'react'
+import {useRef, React} from 'react'
 import Navbars from "../../components/Nav/Navbar";
 // import Model from '../../model/Model';
 import ProductCard from './ProductCard';
+import { useGLTF } from '@react-three/drei';
 import './shop.css'
 
-const Shop = () => {
+function Model({ ...props }) {
+  const group = useRef()
+  const { nodes, materials } = useGLTF('./dountmodel.gltf')
+  return (
+    <group ref={group} {...props} dispose={null}>
+      <mesh
+        geometry={nodes.Mesh.geometry}
+        material={materials.Material}
+        castShadow
+        receiveShadow
+      />
+    </group>
+  )
+}
+
+function Shop() {
 
   return (
 
@@ -15,10 +31,9 @@ const Shop = () => {
         <div className="vertical-line-shop"></div>
         <div className="shopcontainer">
           <div className='model-erea'>
-            model here !
-            image animation!!!!!!!!!!!!!!
+            {/* < Model /> */}
           </div>
-          <div> 
+          <div>
             <ProductCard />
             <ProductCard />
           </div>

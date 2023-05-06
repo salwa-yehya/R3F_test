@@ -40,6 +40,10 @@
     height: 260px;
     border-radius: 40px ;
     margin-top: 20px;
+    transition: transform .2s;
+}
+.card-conteiner img:hover{
+    transform: scale(1.1);
 }
 .card-conteiner button {
     width: 150px;
