@@ -1,4 +1,4 @@
-import React from 'react'
+  import React from 'react'
 import '../Home/home.css';
 import img from '../../img/hero.png'
 // import { FaInstagram } from 'react-icons/fa';
@@ -18,7 +18,7 @@ const Home = () => {
 
       <div className='container'>
 
-        <div className="vertical-line"></div>
+        {/* <div className="vertical-line"></div> */}
         <div className='bannercontainer'>
           <div className='dountseara'>
             <Canvas>
@@ -41,7 +41,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="vertical-line1"></div>
+        {/* <div className="vertical-line1"></div> */}
       </div>
 
 

@@ -26,9 +26,9 @@
 }
 .card-conteiner{
     margin-top: 3rem;
-    border: 1px solid #333;
-    height: 470px;
-    width: 300px;
+    border: 1px solid #6b6b6b;
+    height: 450px;
+    width: 270px;
     border-radius: 40px;
     display: flex;
     flex-direction: column;
@@ -36,18 +36,18 @@
     align-items: center;
 }
 .card-conteiner img {
-    width: 260px;
-    height: 260px;
+    width: 250px;
+    height: 250px;
     border-radius: 40px ;
     margin-top: 20px;
     transition: transform .2s;
 }
 .card-conteiner img:hover{
-    transform: scale(1.1);
+    transform: scale(1.04);
 }
 .card-conteiner button {
     width: 150px;
-    height: 75px;
+    height: 50px;
     border: none;
     background-color: #F3AEC3;
     color: black;
