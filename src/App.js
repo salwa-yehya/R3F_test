@@ -9,14 +9,14 @@ import Chatbot from "./Chatbot";
 function App() {
   return (
     <>
-
-      <BrowserRouter>
+<Home />
+      {/* <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />}> </Route>
           <Route path='/R3F_test' element={<Home />}> </Route>
           <Route path='/shop' element={<Shop />}> </Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
 
       <Chatbot />
     </>
