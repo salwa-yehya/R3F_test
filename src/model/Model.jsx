@@ -12,7 +12,7 @@ export default function Model(props) {
     scale ={0.7}
    
     /> 
-    <Text
+    {/* <Text
     fontSize={3}
     rotation-Y = {1}
     color ={"#AAA"}
@@ -20,7 +20,7 @@ export default function Model(props) {
 
     >
       DONUTS SHOP
-      </Text>
+      </Text> */}
      <Environment preset={'city'}/>
     </>
 
