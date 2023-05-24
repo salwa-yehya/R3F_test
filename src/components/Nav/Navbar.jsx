@@ -2,6 +2,8 @@ import React from 'react';
 import './Navbar.css';
 import mylogo from '../../img/donut.png'
 import { BsFillCartFill } from "react-icons/bs";
+
+
 import { Link } from 'react-router-dom';
 
 
